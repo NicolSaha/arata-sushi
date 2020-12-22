@@ -1,3 +1,65 @@
+//FORM BUTTON
+window.formbutton =
+  window.formbutton ||
+  function () {
+    (formbutton.q = formbutton.q || []).push(arguments);
+  };
+formbutton('create', {
+  action: 'https://formspree.io/f/xleoojel',
+
+  title: 'Bestel Hier!',
+  description: 'We contacteren u zo spoedig mogelijk.',
+
+  fields: [
+    {
+      name: 'name',
+      type: 'text',
+      label: 'Naam',
+      required: true,
+    },
+    {
+      name: 'email',
+      type: 'email',
+      label: 'Email',
+      required: true,
+    },
+    {
+      name: 'Message',
+      type: 'textarea',
+      label: 'Bericht',
+    },
+    {
+      type: 'submit',
+    },
+  ],
+  styles: {
+    fontFamily: '"Lato", sans-serif',
+    button: {
+      background: '#F43F5E',
+    },
+    title: {
+      background: '#F43F5E',
+      letterSpacing: '0.05em',
+      textTransform: 'uppercase',
+      fontWeight: '800',
+    },
+    description: {
+      background: '#F43F5E',
+      letterSpacing: '0.05em',
+    },
+    body: {
+      background: '#ffffff',
+      letterSpacing: '0.05em',
+    },
+    input: {
+      border: 'solid',
+      borderColor: 'rgba(241, 245, 249, 0.9)',
+      borderRadius: '5px',
+      letterSpacing: '0.05em',
+    },
+  },
+});
+
 //MOBILE MENU
 const mainMenu = document.getElementById('main-menu');
 const mobileMenu = document.getElementById('mobile-menu');
