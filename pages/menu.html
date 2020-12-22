@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/tailwind.output.css" rel="stylesheet" />
+    <title>Arata Sushi</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div>
+      <!-- HEADER -->
+      <div class="relative bg-blue-gray-50">
+        <div class="bg-blue-gray-900 shadow sticky top-0 ... z-10">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div
+              class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+            >
+              <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="../index.html">
+                  <span class="sr-only">Arata Sushi</span>
+                  <img
+                    class="h-8 w-auto sm:h-10"
+                    src="../assets/logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div id="main-menu" class="-mr-2 -my-2 md:hidden">
+                <button
+                  type="button"
+                  class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                >
+                  <!-- Heroicon name: menu -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <nav class="hidden md:flex space-x-10">
+                <a
+                  href="../index.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Home
+                </a>
+                <a
+                  href="./menu.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Menu
+                </a>
+
+                <a
+                  href="./contact.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Contact
+                </a>
+              </nav>
+              <div
+                class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"
+              >
+                <a
+                  href="./menu.html"
+                  class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700"
+                >
+                  Menu
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="mobile-menu"
+            class="hidden opacity-0 scale-95 absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
+          >
+            <div
+              class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-blue-gray-900 divide-y-2 divide-gray-50"
+            >
+              <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="../assets/logo.png" alt="logo" />
+                  </div>
+                  <div id="exit-mobile-menu" class="-mr-2">
+                    <button
+                      type="button"
+                      class="bg-blue-gray-900 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                    >
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: x -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <nav class="grid gap-y-8">
+                    <a
+                      href="index.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Home
+                      </span>
+                    </a>
+                    <a
+                      href="./menu.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Menu
+                      </span>
+                    </a>
+
+                    <a
+                      href="./contact.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Contact
+                      </span>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- MENU -->
+      <div
+        class="mx-auto justify-items-center content-center items-center text-center w-2/3"
+      >
+        <img
+          src="../assets/combos.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="sushi combo"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Combos
+        </h2>
+        <ul class="divide-y divide-opacity-80 divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Chef's Choice <span class="text-rose-500">€45</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Depends on the chef's mood (25 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Veg Combo<span class="text-rose-500">€14</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our vegetable sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Veg Combo <span class="text-rose-500">€26</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our vegetable sushis (24 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Fried Combo <span class="text-rose-500">€17</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our fried sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Fried Combo <span class="text-rose-500">€34</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our fried sushis (24 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Maki and Sashimi Combo <span class="text-rose-500">€25</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our maki sushis and sashimis (24 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Maki Combo <span class="text-rose-500">€15</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our maki sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Nigiri Combo <span class="text-rose-500">€16</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our nigiri sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Nigiri Combo Salmon and Tuna
+              <span class="text-rose-500">€25</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our salmon and tuna nigiris (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sashimi Combo <span class="text-rose-500">€28</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our sashimis (20 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon Combo <span class="text-rose-500">€22</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our salmon sushis (20 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna Combo <span class="text-rose-500">€25</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our tuna sushis (20 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Nigiri Salmon Combo <span class="text-rose-500">€20</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our nigiri salmon sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Nigiri Tuna Combo <span class="text-rose-500">€26</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our nigiri tuna sushis (12 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sashimi Salmon and Tuna Combo
+              <span class="text-rose-500">€32</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our nigiri salmon and tuna sushis (20 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Beach Combo <span class="text-rose-500">€15</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our nigiris, hoso makis, futo makis, and rainbow rolls (15
+              stuks, no sashimi)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Combo 1 Persoon <span class="text-rose-500">€29</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our sashimis, nigiris, hoso makis, futo makis, and rainbow
+              rolls (24 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Combo 2 Personen <span class="text-rose-500">€58</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our sashimis, nigiris, hoso makis, futo makis, and rainbow
+              rolls (50 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Combo 3 Personen <span class="text-rose-500">€86</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our sashimis, nigiris, hoso makis, futo makis, and rainbow
+              rolls (72 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Combo 4 Personen <span class="text-rose-500">€120</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Mix of our sashimis, nigiris, hoso makis, futo makis, and rainbow
+              rolls (96 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/tartare.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="tartare"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Tartares
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon <span class="text-rose-500">€12</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon, avocado, and japanese mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna <span class="text-rose-500">€13</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tuna, apple, cucumber, and cream
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/sashimi.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="sashimi sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Sashimi
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Salmon sashimi (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Squid <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Squid sashimi (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Tuna sashimi (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Octopus <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Octopus sashimi (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Paling Unagi <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Paling sashimi (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tamago <span class="text-rose-500">€4</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Japanese Omelette (4 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Avocado <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Avocado sashimi (4 stuks)</p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/nigiri.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="nigiri"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Nigiri
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Salmon nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna <span class="text-rose-500">€6,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Tuna nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Eel <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Eel nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Japanese Omelette <span class="text-rose-500">€3,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Japanese omelette nigiri (2 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Krabstick <span class="text-rose-500">€3,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Krabstick nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon Eggs <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon Eggs nigiri (2 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Scampi <span class="text-rose-500">€4</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Scampi nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Squid <span class="text-rose-500">€4</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Squid nigiri (2 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Japanese Omelette <span class="text-rose-500">€3,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Avocado nigiri (2 stuks)</p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/hosomaki.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="hoso maki sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Hoso Maki
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Avocado <span class="text-rose-500">€4,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Avocado Hoso Maki (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Cucumber <span class="text-rose-500">€4</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Cucumber Hoso Maki (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Japanese Omelette <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Japanese Omelette Hoso Maki (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Salmon Hoso Maki (8 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Scampi <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Scampi Hoso Maki (8 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Tuna Hoso Maki (8 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Crab <span class="text-rose-500">€5,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Crab Hoso Maki (8 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tempura Scampi <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tempura Scampi Hoso Maki (8 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/insideout.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="insideout sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Inside Out Rolls
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon and Avocado <span class="text-rose-500">€6,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki salmon and avocado (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Spicy Salmon <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki spicy salmon (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Spicy Scampi <span class="text-rose-500">€7,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki spicy scampi (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Spicy Tuna <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki spicy tuna (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Spicy Tuna <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki spicy tuna (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna and Avocado <span class="text-rose-500">€7,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki tuna and avocado (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Crab and Avocado <span class="text-rose-500">€6,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki crab and avocado (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Veg Mix <span class="text-rose-500">€5,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki radish, avocado, cucumber (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Salmon Crunch <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki salmon crunch (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tuna Crunch <span class="text-rose-500">€9,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki tuna crunch (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Scampi Crunch <span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki scampi crunch (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Chicken Crunch <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki chicken crunch (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Crab Crunch <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Hoso Maki crab crunch (8 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/temaki.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="temaki sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Temaki
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Salmon <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon, tempura, avocado, and spicy mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Tuna <span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tuna, tempura, avocado, and spicy mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Vegi <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Vegetables, tempura, avocado, and spicy mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Boston <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, scampi, cucumber, salad, avocado, tamago, marinated radish
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, Japanese omelette, cucumber, salad, avacado
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California Speciaal<span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, salmon, tuna, Japanese omelette, cucumber, salad, avocado
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California Vegi <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Cucumber, salad, avocado</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              New York <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, tempura scampi, cucumber, salad, avocado, and spicy
+              mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              New York <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, tempura scampi, cucumber, salad, avocado, and spicy
+              mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Soft Shell Crab <span class="text-rose-500">€11,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, cucumber, salad, avocado, masago, tamago
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tempura Chicken <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tempura chicken, cucumber, and spicy mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tempura Maki <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tempura scampi, cucumber, and spicy mayonaise
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/futomaki.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="futo maki sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Futo Maki
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Salmon <span class="text-rose-500">€9,40</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon, tempura, avocado, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Tuna <span class="text-rose-500">€10,90</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tuna, tempura, avocado, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kami Vegi <span class="text-rose-500">€7,90</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Vegetables, tempura, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Boston <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, scampi, cucumber, salad, avocado, tamaga, marinated radish
+              (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California <span class="text-rose-500">€9</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, Japanese omelette, cucumber, salad, avocado (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California Special <span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, salmon, tuna Japanese omelette, cucumber, salad, avocado (6
+              stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              California Vegi <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Cucumber, salad, avocado (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              New York <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, tempura, cucumber, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Soft Shell Crab <span class="text-rose-500">€11,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, cucumber, avocado, massago, tomago (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tempura Chicken <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tempura chicken, cucumber, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Tempura Maki <span class="text-rose-500">€8,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tempura scampi, cucumber, spicy mayonaise (6 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/rainbow.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="rainbow roll sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Rainbow Rolls
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Atlantic <span class="text-rose-500">€11</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Spicy salmon with avocado & salmon topping (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Green Dragon <span class="text-rose-500">€11,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Spicy tuna filling with avocado topping (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Rainbow Roll<span class="text-rose-500">€14</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Avocado, tuna, salmon, sea bass, california filling (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Volcano Roll <span class="text-rose-500">€12,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Kanikama salad filling with tuna topping (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dragon Roll<span class="text-rose-500">€12,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon roll, sea bass, tuna, spicy tuna filling (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Roll<span class="text-rose-500">€13</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Spicy tuna with salmon & salmon eggs topping (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Teriyaki Chicken<span class="text-rose-500">€13</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Fried chicken, teriyaki sauce with avocado topping (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dynamic <span class="text-rose-500">€13,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Eel, tempura, cucumber, avocado, with tobiko and masago topping (8
+              stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Empress Roll <span class="text-rose-500">€13,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Spicy tempura scampi, eel, avocado, with tobiko toppping (8 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/fried.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="fried sushi"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Fried Rolls
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sydney <span class="text-rose-500">€12</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Tuna, avocado, tempura</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dragon Eyes<span class="text-rose-500">€13</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Salmon, crab, avocado, Japanese omelette, tempura, sweet sauce,
+              and spicy mayonaise (8 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Chef Special <span class="text-rose-500">€14</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Fried tuna avocado roll (8 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/coldappetisers.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="cold appetisers"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Cold Appetisers
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Seaweed <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Seaweed Salad</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Kani Kama Salad <span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Crab, tempura massago, scampi, and spicy mayonaise
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sake Butshu <span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Marinated salmon with coriander, and garlic
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Maguro Butshu <span class="text-rose-500">€12</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Marinated tuna with coriander, and garlic
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Arata Salad <span class="text-rose-500">€12</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Tuna with avocado, coriander, and garlic
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/hotappetisers.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="hot appetisers"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Hot Appetisers
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Loempia Veg <span class="text-rose-500">€3,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Vegetables spring rolls (2 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Loempia Chicken <span class="text-rose-500">€4,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Chicken spring rolls (2 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Edamame <span class="text-rose-500">€5</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Japanese Soybeans</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Karaage <span class="text-rose-500">€6</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Fried Chicken (4 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dim Sum Veg <span class="text-rose-500">€6,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Steamed veg dumplings (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Gyoza Fried <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Fried snacks with chicken (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dim Sum Chicken <span class="text-rose-500">€7</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Steamed chicken dumplings (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dim Sum Mix <span class="text-rose-500">€7,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              mix Steamed veg, chicken, scampi dumplings (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Dim Sum Scampi <span class="text-rose-500">€8</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Steamed scampy dumplings (6 stuks)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Ebi Tempura<span class="text-rose-500">€10</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Friend Scampis (7 stuks)</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Seafood Tempura<span class="text-rose-500">€11</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Fried assortiment of seafood(7 stuks)
+            </p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/rice.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="rice"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Extra
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Rice <span class="text-rose-500">€3</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Plain Rice</p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/soda.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="soda"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Fresh Drinks
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Coca-Cola (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Bevat cafeïne (9,6 mg/100 ml)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Coca-Cola Zero (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">
+              Bevat cafeïne (9,6 mg/100 ml)
+            </p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Fanta (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Fanta</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Ice Tea (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Ice Tea</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Water Plat (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Water Plat</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Water Bruisend (50cl) <span class="text-rose-500">€2,70</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">Water Bruisend</p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/beer.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="beer"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Beers
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Jupiler <span class="text-rose-500">€2,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">5.2% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sapporo <span class="text-rose-500">€3</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">5.0% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Asahi <span class="text-rose-500">€3,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">5.0% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Sake (180ml) <span class="text-rose-500">€10,50</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">10,5% vol</p>
+          </li>
+        </ul>
+
+        <img
+          src="../assets/wine.jpg"
+          class="rounded-3xl shadow-xl h-64 w-96 mx-auto my-10"
+          alt="wine"
+        />
+        <h2 class="text-xl font-extrabold text-blue-gray-900 sm:text-2xl">
+          Wines
+        </h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Rode Huiswijn (75cl) <span class="text-rose-500">€24</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">10,0% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Witte Huiswijn (75cl) <span class="text-rose-500">€24</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">9,7% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Rosé Huiswijn (75cl) <span class="text-rose-500">€24</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">8,7% vol</p>
+          </li>
+          <li class="py-4 ml-3">
+            <p class="text-sm font-medium text-blue-gray-900">
+              Cava (75cl) <span class="text-rose-500">€25</span>
+            </p>
+            <p class="text-sm text-blue-gray-500">10,0% vol</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-t from-rose-50 to-transparent">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        >
+          <h2
+            class="text-3xl font-extrabold tracking-tight text-blue-gray-900 md:text-4xl"
+          >
+            <span class="block">Be prepared to be delighted</span>
+            <span class="block text-rose-600">Bestel nu!</span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex rounded-md shadow">
+              <a
+                href="https://www.takeaway.com/be/menu/arata-sushi"
+                class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700"
+              >
+                takeaway.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="bg-gradient-to-b from-rose-50 to-transparent">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+        >
+          <div class="flex justify-center space-x-6 md:order-2">
+            <a href="mailto:info@aratasushi.be" class="">
+              <span class="sr-only">Email</span>
+              <img
+                class="h-6 w-6"
+                viewBox="0 0 24
+              24"
+                aria-hidden="true"
+                src="../assets/mail.svg"
+                alt="Email Icon"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/pages/category/Sushi-Restaurant/Arata-Sushi-Bar-Blankenberge-116006663105996/"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="mt-8 md:mt-0 md:order-1">
+            <p class="text-center text-base text-blue-gray-400">
+              &copy; 2020 Arata Sushi. All rights reserved. Designed by
+              <a href="https://www.nicolsaha.dev/">Nicol Saha</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+     <script src="../index.js"></script>
+  </body>
+</html>

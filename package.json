@@ -1,0 +1,29 @@
+{
+  "name": "arata-sushi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "postcss ./styles/tailwind.css -o ./styles/tailwind.output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolSaha/arata-sushi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolSaha/arata-sushi/issues"
+  },
+  "homepage": "https://github.com/NicolSaha/arata-sushi#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
+}

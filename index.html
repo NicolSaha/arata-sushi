@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/tailwind.output.css" rel="stylesheet" />
+    <title>Arata Sushi</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div>
+      <!-- HEADER -->
+      <div class="relative bg-blue-gray-50">
+        <div class="bg-blue-gray-900 shadow sticky top-0 ... z-10">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div
+              class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+            >
+              <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="index.html">
+                  <span class="sr-only">Arata Sushi</span>
+                  <img
+                    class="h-8 w-auto sm:h-10"
+                    src="assets/logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div id="main-menu" class="-mr-2 -my-2 md:hidden">
+                <button
+                  type="button"
+                  class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                >
+                  <!-- Heroicon name: menu -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <nav class="hidden md:flex space-x-10">
+                <a
+                  href="index.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Home
+                </a>
+                <a
+                  href="./pages/menu.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Menu
+                </a>
+
+                <a
+                  href="./pages/contact.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Contact
+                </a>
+              </nav>
+              <div
+                class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"
+              >
+                <a
+                  href="./pages/menu.html"
+                  class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700"
+                >
+                  Menu
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="mobile-menu"
+            class="hidden opacity-0 scale-95 absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
+          >
+            <div
+              class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-blue-gray-900 divide-y-2 divide-gray-50"
+            >
+              <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="assets/logo.png" alt="logo" />
+                  </div>
+                  <div id="exit-mobile-menu" class="-mr-2">
+                    <button
+                      type="button"
+                      class="bg-blue-gray-900 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                    >
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: x -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <nav class="grid gap-y-8">
+                    <a
+                      href="index.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Home
+                      </span>
+                    </a>
+                    <a
+                      href="./pages/menu.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Menu
+                      </span>
+                    </a>
+
+                    <a
+                      href="./pages/contact.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Contact
+                      </span>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="lg:relative">
+          <div
+            class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left"
+          >
+            <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+              <h1
+                class="text-4xl tracking-tight font-extrabold text-blue-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
+              >
+                <span class="block xl:inline">Arata Sushi Bar</span>
+                <span class="block text-rose-600 xl:inline">Blankenberge</span>
+              </h1>
+              <p
+                class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl"
+              >
+                Om u de beste smaaksensatie te bezorgen werken wij met dagverse
+                ingredienten van de beste kwaliteit! Genieten van de Japanse
+                keuken doe je dus bij ons. Ook beschikbaar als take away!
+              </p>
+              <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a
+                    href="./pages/menu.html"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700 md:py-4 md:text-lg md:px-10"
+                  >
+                    Menu
+                  </a>
+                </div>
+                <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                  <a
+                    href="./pages/contact.html"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-rose-600 bg-white hover:bg-blue-gray-50 md:py-4 md:text-lg md:px-10 hover:border-rose-500"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full"
+          >
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              src="assets/heroimg.jpg"
+              alt=""
+            />
+          </div>
+        </main>
+      </div>
+
+      <!-- REVIEWS -->
+      <section class="bg-rose-600">
+        <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
+          <div
+            class="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-rose-400 lg:pr-16"
+          >
+            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+              <div class="relative text-lg font-medium text-white md:flex-grow">
+                <svg
+                  class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-rose-400"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                  />
+                </svg>
+                <p class="relative">
+                  Super lekkere en verse sushi. Als ze het druk hebben en je
+                  bestelling is een kwartiertje later dan gepland, bellen ze je
+                  netjes op om dit te vermelden. Keer op keer goede service. Wij
+                  bestellen regelmatig en zullen dit blijven doen!
+                </p>
+              </div>
+            </blockquote>
+          </div>
+          <div
+            class="py-12 px-4 border-t-2 border-rose-400 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16"
+          >
+            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
+              <div class="relative text-lg font-medium text-white md:flex-grow">
+                <svg
+                  class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-rose-400"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                  />
+                </svg>
+                <p class="relative">
+                  Beter dan dit kan niet! Superlieve mensen en superlekker eten.
+                  Altijd een plezier om bij hen te bestellen!
+                </p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-b from-rose-50 to-transparent">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        >
+          <h2
+            class="text-3xl font-extrabold tracking-tight text-blue-gray-900 md:text-4xl"
+          >
+            <span class="block">Be prepared to be delighted</span>
+            <span class="block text-rose-600">Gratis Levering!</span>
+            <span
+              class="block text-lg text-blue-gray-500 sm:text-xl font-normal"
+            >
+              Vanaf €25 in: Blankenberge, Uitkerke <br />
+              Vanaf €50 in: Zuienkerke, Dudzele, Lissewege, Zeebrugge, Wenduine,
+              Nieuwmunster <br />
+              Vanaf €60 in: De Haan, Vlissegem, Klemskerke
+            </span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="sm:flex sm:justify-center lg:justify-start">
+              <div class="rounded-md shadow">
+                <a
+                  href="./pages/menu.html"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700 md:py-4 md:text-lg md:px-10"
+                >
+                  Menu
+                </a>
+              </div>
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <a
+                  href="./pages/contact.html"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-rose-600 bg-white hover:bg-blue-gray-50 md:py-4 md:text-lg md:px-10 hover:border-rose-500"
+                >
+                  Bestel
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="bg-white">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+        >
+          <div class="flex justify-center space-x-6 md:order-2">
+            <a href="mailto:info@aratasushi.be" class="">
+              <span class="sr-only">Email</span>
+              <img
+                class="h-6 w-6"
+                viewBox="0 0 24
+              24"
+                aria-hidden="true"
+                src="assets/mail.svg"
+                alt="Email Icon"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/pages/category/Sushi-Restaurant/Arata-Sushi-Bar-Blankenberge-116006663105996/"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="mt-8 md:mt-0 md:order-1">
+            <p class="text-center text-base text-blue-gray-400">
+              &copy; 2020 Arata Sushi. All rights reserved. Designed by
+              <a href="https://www.nicolsaha.dev/">Nicol Saha</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
+    <script>
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      formbutton('create', {
+        action: 'https://formspree.io/f/xleoojel',
+
+        title: 'Bestel Hier!',
+        description: 'We contacteren u zo spoedig mogelijk.',
+
+        fields: [
+          {
+            name: 'name',
+            type: 'text',
+            label: 'Naam',
+            required: true,
+          },
+          {
+            name: 'email',
+            type: 'email',
+            label: 'Email',
+            required: true,
+          },
+          {
+            name: 'Message',
+            type: 'textarea',
+            label: 'Bericht',
+          },
+          {
+            type: 'submit',
+          },
+        ],
+        styles: {
+          fontFamily: '"Lato", sans-serif',
+          button: {
+            background: '#F43F5E',
+          },
+          title: {
+            background: '#F43F5E',
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+            fontWeight: '800',
+          },
+          description: {
+            background: '#F43F5E',
+            letterSpacing: '0.05em',
+          },
+          body: {
+            background: '#ffffff',
+            letterSpacing: '0.05em',
+          },
+          input: {
+            border: 'solid',
+            borderColor: 'rgba(241, 245, 249, 0.9)',
+            borderRadius: '5px',
+            letterSpacing: '0.05em',
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

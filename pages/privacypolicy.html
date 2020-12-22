@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/tailwind.output.css" rel="stylesheet" />
+    <title>Arata Sushi</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div>
+      <!-- HEADER -->
+      <div class="relative bg-blue-gray-50">
+        <div class="bg-blue-gray-900 shadow sticky top-0 ... z-10">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div
+              class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+            >
+              <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="../index.html">
+                  <span class="sr-only">Arata Sushi</span>
+                  <img
+                    class="h-8 w-auto sm:h-10"
+                    src="../assets/logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div id="main-menu" class="-mr-2 -my-2 md:hidden">
+                <button
+                  type="button"
+                  class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                >
+                  <!-- Heroicon name: menu -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <nav class="hidden md:flex space-x-10">
+                <a
+                  href="../index.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Home
+                </a>
+                <a
+                  href="./menu.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Menu
+                </a>
+
+                <a
+                  href="./contact.html"
+                  class="text-base font-medium text-white hover:text-red-500"
+                >
+                  Contact
+                </a>
+              </nav>
+              <div
+                class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"
+              >
+                <a
+                  href="./pages/menu.html"
+                  class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-rose-600 to-rose-400 hover:from-rose-700 hover:to-rose-700"
+                >
+                  Menu
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="mobile-menu"
+            class="hidden opacity-0 scale-95 absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
+          >
+            <div
+              class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-blue-gray-900 divide-y-2 divide-gray-50"
+            >
+              <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="../assets/logo.png" alt="logo" />
+                  </div>
+                  <div id="exit-mobile-menu" class="-mr-2">
+                    <button
+                      type="button"
+                      class="bg-blue-gray-900 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-rose-500 hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500"
+                    >
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: x -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <nav class="grid gap-y-8">
+                    <a
+                      href="../index.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Home
+                      </span>
+                    </a>
+                    <a
+                      href="./menu.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Menu
+                      </span>
+                    </a>
+
+                    <a
+                      href="./contact.html"
+                      class="-m-3 p-3 flex items-center rounded-md hover:bg-blue-gray-500"
+                    >
+                      <span class="ml-3 text-base font-medium text-white">
+                        Contact
+                      </span>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <section class="bg-gradient-to-t from-rose-50 to-transparent px-24 py-10">
+        <h1
+          class="text-3xl font-extrabold tracking-tight text-blue-gray-900 sm:text-4xl"
+        >
+          Privacy Policy
+        </h1>
+        <p class="mt-4 text-lg leading-8 tracking-normal text-blue-gray-500">
+          <strong class="text-blue-gray-700">
+            Privacy policy voor Arata Sushi, eigenaar van
+            www.aratasushi.be</strong
+          >
+          <br />
+
+          <strong class="text-rose-500">1)</strong>
+          <strong class="text-blue-gray-700">Waarborgen Privacy</strong> <br />
+          Het waarborgen van de privacy van bezoekers van www.aratasushi.be is
+          een belangrijke taak voor ons. Daarom beschrijven we in onze privacy
+          policy welke informatie we verzamelen en hoe we deze informatie
+          gebruiken.
+          <br />
+          <strong class="text-rose-500">2)</strong>
+          <strong class="text-blue-gray-700">Toestemming</strong> <br />Door de
+          informatie en de diensten op www.aratasushi.be te gebruiken, gaat u
+          akkoord met onze privacy policy en de voorwaarden die wij hierin
+          hebben opgenomen.
+          <br />
+          <strong class="text-rose-500">3)</strong>
+          <strong class="text-blue-gray-700">Vragen</strong> <br />Als u meer
+          informatie wilt ontvangen, of vragen hebt over de privacy policy van
+          Arata Sushi en specifiek www.aratasushi.be, kun u ons benaderen via
+          e-mail. Ons e-mailadres is info@aratasushi.be.
+          <br />
+          <strong class="text-rose-500">4)</strong>
+          <strong class="text-blue-gray-700">Monitoren</strong> <br />
+          gedrag bezoeker www.aratasushi.be maakt gebruik van verschillende
+          technieken om bij te houden wie de website bezoekt, hoe deze bezoeker
+          zich op de website gedraagt en welke pagina’s worden bezocht. Dat is
+          een gebruikelijke manier van werken voor websites omdat het informatie
+          oplevert op die bijdraagt aan de kwaliteit van de gebruikerservaring.
+          De informatie die we, via cookies, registreren, bestaat uit onder meer
+          IP-adressen, het type browser en de bezochte pagina’s. Tevens
+          monitoren we waar bezoekers de website voor het eerst bezoeken en
+          vanaf welke pagina ze vertrekken. Deze informatie houden we anoniem
+          bij en is niet gekoppeld aan andere persoonlijke informatie, hier.
+          <br />
+          <strong class="text-rose-500">5)</strong>
+          <strong class="text-blue-gray-700">Persoonlijke Data</strong> <br />
+          Bezoekers kunnen worden gecheckt door een derde partij voor anti-spam
+          doeleinden.
+          <br />
+        </p>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-gradient-to-b from-rose-50 to-transparent">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+        >
+          <div class="flex justify-center space-x-6 md:order-2">
+            <a href="mailto:info@aratasushi.be">
+              <span class="sr-only">Email</span>
+              <img
+                class="h-6 w-6"
+                viewBox="0 0 24
+              24"
+                aria-hidden="true"
+                src="../assets/mail.svg"
+                alt="Email Icon"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/pages/category/Sushi-Restaurant/Arata-Sushi-Bar-Blankenberge-116006663105996/"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="mt-8 md:mt-0 md:order-1">
+            <p class="text-center text-base text-blue-gray-400">
+              &copy; 2020 Arata Sushi. All rights reserved. Designed by
+              <a href="https://www.nicolsaha.dev/">Nicol Saha</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+     <script src="../index.js"></script>
+  </body>
+</html>
