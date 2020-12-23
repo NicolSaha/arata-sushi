@@ -2,7 +2,8 @@
 
 ## 💭 Live Version
 
-- [Home](https://arata-sushi.netlify.app/)
+- [Netlify](https://arata-sushi.netlify.app/)
+- [Live](https:/www.aratasushi.be/)
 
 ## 🛠 Built with
 
